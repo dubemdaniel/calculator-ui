@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color:  white;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;;
+}
+body{
+    background-color:  hsl(222, 26%, 31%);
+}
+.overall-calculator{
+    margin:5rem auto;
+    max-width: 20rem;
+}
+.calc-theme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:  hsl(0, 0, 100%) ;
+    padding: 1.2rem 0px;
+}
+.switch-holder{
+    background-color:   hsl(224, 36%, 15%);
+    max-width: 3rem;
+    min-width: 2.5rem;
+    height:.8rem ;
+    border-radius: 6px;
+    padding: 2.5px;
+}
+.switch{
+    width: .5rem;
+    height: .5rem;
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 100%;
+}
+.theme-setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.theme-setting h6{
+    padding: 0px 1rem;
+    color: white;
+}
+.toggle-control{
+    text-align: center;
+    font-size: small;
+    font-weight: 100;
+}
+.toggle-control p{
+    letter-spacing: 2px;
+}
+.display{
+    height: 4.4rem;
+    background-color:hsl(224, 36%, 15%) ;
+    padding:1.4rem 1rem ;
+    border-radius: .4rem;
+    text-align: right;
+    justify-content: right;
+    align-items: center;
+}
+.calculator-body{
+    background-color:   hsla(223, 37%, 15%, 0.582);
+    border-radius: 4px;
+    margin: 1rem 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1rem .8rem;
+}
+.btn{
+    width: 80%;
+    height: 2.4rem;
+    background-color: white;
+    margin: .4rem .4rem;
+    border-radius: .3rem;
+    text-align: center;
+    display: flex;
+    align-self: center;
+}
+button{
+    background-color: transparent;
+    /* outline: transparent; */
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    
+}
+button h3{
+    color:  hsl(221, 14%, 31%);
+}
+.del, .reset{
+    background-color:  hsl(224, 28%, 35%);
+}
+.reset{
+    grid-column: span 2;
+    width: 90%;
+}
+.del button h3, .reset button h3{
+    color: white;
+}
+.equals{
+    background-color:  hsl(6, 63%, 50%);
+    grid-column: span 2;
+    width: 90%;
+}
+.equals button h3{
+    color: white;
+}
