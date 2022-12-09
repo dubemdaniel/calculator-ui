@@ -89,7 +89,7 @@ body{
     
 }
 .btn:active{
-    background-color: red;
+    background-color: rgba(250, 129, 129, 0.601);
 }
 button{
     background-color: transparent;
