@@ -27,23 +27,16 @@ const keys = document.querySelector('.calculator-body')
 // const buttons = document.getElementsByTagName('button')
 // const h3 = document.getElementsByTagName('h3')
 
-// // document.appendChild(document.createTextNode(tar))
-// for(let i = 0; i < btn.length; i++){
-//     btn[i].addEventListener('click', function () {
-//         let digit = btn[i].getElementsByTagName('button').textNode
-//         screen.value += digit
-//         console.log('ur pa')
-//         console.log(h3.value)
-//     })
-// }
-
-
-btn.addEventListener('click', function(e){
-    if (e.target.attribute('data-num')){
+// document.appendChild(document.createTextNode(tar))
+for(let i = 0; i < btn.length; i++){
+    btn[i].addEventListener('click', function () {
+        let digit = btn[i].getElementsByTagName('button').textNode
+        screen.value += digit
         console.log('ur pa')
-    }
-    e.preventDefault
-})
+        // console.log(h3.value)
+    })
+}
+
 
 
 
