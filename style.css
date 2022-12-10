@@ -120,3 +120,10 @@ button h3{
 .equals button h3{
     color: white;
 }
+
+.norm{
+    background-color: rgb(34, 28, 28);
+    color: white;
+    width: 4rem;
+    padding: 1rem;
+}

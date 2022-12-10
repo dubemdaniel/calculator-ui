@@ -1,72 +1,50 @@
 const screen = document.querySelector('.screen')
+
 const clear = document.querySelector('.reset')
+
 const equal = document.querySelector('.equals')
 
-const btn = document.getElementById('b')
-
-// for (let i = 0; i < btn.length; i++) {
-
-//     btn[i].addEventListener('click', () => {
-//         let number = btn[i].getAttribute('data-num')
-//         screen.value += number
-//         console.log('ur pa')
-//     })
-    
-// }
-
-// for (let i = 0; i < btn.length; i++){
-
-//     btn[i].addEventListener('click', function () {
-//         let digit = btn[i].getAttribute('data-num')
-//         screen.value += digit
-//         console.log('ur pa')
-//     })
-
-// }
+const btn = document.querySelectorAll('#b')
 
 const keys = document.querySelector('.calculator-body')
-// keys.addEventListener('click', e => {
-//     const key = e.target
-//     if(key.classList === 'btn'){
-//         const keyContent = key.textContent
-//         screen.value = keyContent
-//     }
-// })
-btn.forEach(button => {
-    button.addEventListener('click', () => {
-      screen.appendNumber(btn.innerText)
-
-    })
-  })
 
 
-    // const keyContent = key.textContent
+// btn.forEach(button => {
+//     button.addEventListener('click', function(e) {
+//       console.log('it work')
 
-// for (let i = 0; i < btn.length; i++) {
+//     //   screen.textContent = btn.innerHTML
 
-// btn.addEventListener('click', function(e){
-//     // let tar = e.target 
-    
-//     // document.appendChild(document.createTextNode(tar))
+//     let tar = e.target.value
 
-//     console.log('ur pa')
+//     screen.appendChild(document.createTextNode(tar))
 
-//     screen.appendchild(document.createTextNode(btn.nodeValue))
-
-//     e.preventDefault
+//       console.log(tar)
 //     })
-    
+//   })
+
+// const div = document.getElementsByTagName('div')
+// const buttons = document.getElementsByTagName('button')
+// const h3 = document.getElementsByTagName('h3')
+
+// // document.appendChild(document.createTextNode(tar))
+// for(let i = 0; i < btn.length; i++){
+//     btn[i].addEventListener('click', function () {
+//         let digit = btn[i].getElementsByTagName('button').textNode
+//         screen.value += digit
+//         console.log('ur pa')
+//         console.log(h3.value)
+//     })
 // }
 
-// btn.addEventListener('click', function(e){
-//     // let tar = e.target 
-    
-//     // document.appendChild(document.createTextNode(tar))
 
-//     console.log('ur pa')
+btn.addEventListener('click', function(e){
+    if (e.target.attribute('data-num')){
+        console.log('ur pa')
+    }
+    e.preventDefault
+})
 
-//     e.preventDefault
-// })
 
 
 equal.addEventListener('click', () => {
@@ -91,3 +69,12 @@ function back(){
         screen.value = screen.value.toString().slice(0, -1)
     }
 }
+
+// const norm = document.querySelector('.norm')
+// norm.addEventListener('click' , function(e){
+//     console.log(e.target.value)
+
+//     let tar = e.target.value
+
+//     screen.appendChild(document.createTextNode(tar))
+// })
