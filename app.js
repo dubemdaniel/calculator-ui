@@ -9,33 +9,27 @@ const btn = document.querySelectorAll('#b')
 const keys = document.querySelector('.calculator-body')
 
 
-// btn.forEach(button => {
-//     button.addEventListener('click', function(e) {
-//       console.log('it work')
-
-//     //   screen.textContent = btn.innerHTML
-
-//     let tar = e.target.value
-
-//     screen.appendChild(document.createTextNode(tar))
-
-//       console.log(tar)
-//     })
-//   })
+btn.forEach(button => {
+    button.addEventListener('click', function() {
+      console.log('it work')
+        screen.value += button.textContent
+    })
+  })
 
 // const div = document.getElementsByTagName('div')
 // const buttons = document.getElementsByTagName('button')
 // const h3 = document.getElementsByTagName('h3')
 
 // document.appendChild(document.createTextNode(tar))
-for(let i = 0; i < btn.length; i++){
-    btn[i].addEventListener('click', function () {
-        let digit = btn[i].getElementsByTagName('button').textNode
-        screen.value += digit
-        console.log('ur pa')
-        // console.log(h3.value)
-    })
-}
+
+
+// for(let i = 0; i < btn.length; i++){
+//     btn[i].addEventListener('click', function () {
+//         let digit = btn[i].getElementsByTagName('button').textNode
+//         screen.value += digit
+//         // console.log(h3.value)
+//     })
+// }
 
 
 
