@@ -16,11 +16,7 @@ btn.forEach(button => {
     })
   })
 
-// const div = document.getElementsByTagName('div')
-// const buttons = document.getElementsByTagName('button')
-// const h3 = document.getElementsByTagName('h3')
 
-// document.appendChild(document.createTextNode(tar))
 
 
 // for(let i = 0; i < btn.length; i++){
@@ -56,12 +52,3 @@ function back(){
         screen.value = screen.value.toString().slice(0, -1)
     }
 }
-
-// const norm = document.querySelector('.norm')
-// norm.addEventListener('click' , function(e){
-//     console.log(e.target.value)
-
-//     let tar = e.target.value
-
-//     screen.appendChild(document.createTextNode(tar))
-// })
